@@ -85,6 +85,7 @@ class SEO extends Component {
         <script type="application/ld+json">
           {JSON.stringify(schemaOrgJSONLD)}
         </script>
+        <script src="https://hm.baidu.com/hm.js?5d2f02dfecd29db5df0159b441e1d344"></script>
 
         {/* OpenGraph tags */}
         <meta property="og:url" content={postSEO ? postURL : blogURL} />
