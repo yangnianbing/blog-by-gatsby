@@ -9,7 +9,7 @@ A GatsbyJS Blog Template for blogging purpose.
 Install this template (assuming [Gatsby](https://github.com/gatsbyjs/gatsby/) is installed and updated) by running from your CLI:
 
 ```bash
-gatsby new YourProjectName https://github.com/completejavascript/gatsby-blog-template
+gatsby new YourProjectName https://github.com/yangnianbing/blog-by-gatsby
 npm run develop # or gatsby develop
 ```
 
@@ -18,7 +18,8 @@ Or you can fork the project, make your changes there and merge new features when
 Alternatively:
 
 ```bash
-git clone https://github.com/completejavascript/gatsby-blog-template YourProjectName # Clone the project
+git clone https://github.com/yangnianbing/blog-by-gatsby
+YourProjectName # Clone the project
 cd YourProjectname
 rm -rf .git # So you can have your own changes stored in VCS.
 npm install # or yarn install
