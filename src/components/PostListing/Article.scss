@@ -1,0 +1,40 @@
+.article-container {
+  display: flex;
+  flex-direction: column;
+  .thumbnail-wrapper {
+    .thumbnail-img {
+      width: 660px;
+      max-width: 100%;
+    }
+  }
+  .post-info-wrapper {
+    margin-top: 2rem;
+    h2{
+      color: #404040;
+      font-weight: bold;
+    }
+  }
+
+  .post-info-wrapper:hover {
+    color: #0085a1;
+    h2{
+      color: #0085a1;
+    }
+  }
+
+}
+
+@media (min-width: 600px) {
+  .article-container {
+    display: flex;
+    flex-direction: row;
+    .thumbnail-wrapper {
+      .thumbnail-img {
+        width: 300px;
+      }
+    }
+    .post-info-wrapper {
+      margin-top: unset;
+    }
+  }
+}

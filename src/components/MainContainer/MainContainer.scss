@@ -1,0 +1,29 @@
+$sidebar-desktop-width: 300px;
+
+.main-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+
+  .content-wrapper {
+    width: 100%;
+  }
+  .sidebar-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-container { 
+    flex-direction: row;
+    .content-wrapper {
+      padding-right: 3rem;
+      padding-left: 5rem;
+      width: calc(100% - #{$sidebar-desktop-width});
+    }
+    .sidebar-wrapper {
+      padding-left: 3rem;
+      width: $sidebar-desktop-width;
+    }
+  }
+} 

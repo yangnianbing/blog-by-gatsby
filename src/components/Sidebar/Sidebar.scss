@@ -1,0 +1,25 @@
+.sidebar-container{
+    aside{
+        h3{
+            color: #808080!important;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+    }
+    aside.tag-container div a{
+        border: 1px solid rgba(255, 255, 255, .8);
+        border-radius: 999em;
+        border-color: #bfbfbf;
+        padding: 0 10px;
+        color: #bfbfbf;
+        line-height: 24px;
+        font-size: 12px;
+        text-decoration: none;
+        margin: 0 1px;
+    }
+
+    aside.categories-container div a,
+    aside.latest-posts-container div a{
+        color:#bfbfbf
+    }
+}

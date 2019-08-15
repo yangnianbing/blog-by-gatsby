@@ -1,0 +1,22 @@
+.intro-header{
+    h1{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        color: white;
+    }
+
+    .container{
+        padding: 130px 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .intro-header h1{
+        font-size: 80px;
+    }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://gb-template.netlify.com/sitemap.xml
