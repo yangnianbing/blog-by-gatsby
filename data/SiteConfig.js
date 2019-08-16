@@ -120,7 +120,7 @@ const config = {
   headerImage: [            //Index page header image
     '/image/home.jpg'
   ],
-  headerDescription:'talk is cheap show me the code'  //index page header description
+  headerDescription:'just code it and record life'  //index page header description
   
 };
 

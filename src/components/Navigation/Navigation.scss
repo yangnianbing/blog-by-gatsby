@@ -17,9 +17,8 @@ $menu-box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0,0,0,.1);
   width: 100%;
   padding-top: 30px;
   padding-bottom: 40px;
-  background: -moz-linear-gradient(top, rgba(0,0,0,.1), transparent 100%);
   background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,.1)), to(transparent));
-  background: linear-gradient(top, rgba(0,0,0,.1), transparent 100%);
+  background: linear-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,.1)), to(transparent));
   transition: all .5s;
   line-height: 1;
   /*box-shadow: $menu-box-shadow;*/
