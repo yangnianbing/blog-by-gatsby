@@ -71,15 +71,12 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-baidu-analytics`,
-      options: {
-        // baidu analytics siteId
-        siteId: "5d2f02dfecd29db5df0159b441e1d344",
-        // Put analytics script in the head instead of the body [default:false]
-        head: false
-      }
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: "UA-145861364-1" // <- your tracking ID
+    //   }
+    // },
     {
       resolve: "gatsby-plugin-nprogress",
       options: {
