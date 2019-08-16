@@ -117,10 +117,10 @@ const config = {
   // Use for manifest
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF", // Used for setting manifest background color.
-  headerImage: [
+  headerImage: [            //Index page header image
     '/image/home.jpg'
   ],
-  headerDescription:'talk is cheap show me the code'
+  headerDescription:'talk is cheap show me the code'  //index page header description
   
 };
 

@@ -44,11 +44,11 @@ Edit the export object in `data/SiteConfig`:
 ```js
 const config = {
   // Site info
-  siteTitle: "Gatsby Blog Template", // Site title.
+  siteTitle: "Gatsby Blog", // Site title.
   siteTitleShort: "GB Template", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Gatsby Blog Template", // Alternative site title for SEO.
+  siteTitleAlt: "Gatsby Blog", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://gb-template.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://yangmuzi.com", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
@@ -60,7 +60,7 @@ const config = {
   numberLatestPost: 8,
   postsPerPage: 6,
   // Use for post
-  dateFromFormat: "YYYY-MM-DD HH:mm", // Date format used in the frontmatter.
+  dateFromFormat: "YYYY-MM-DD HH:mm:ss", // Date format used in the frontmatter.
   dateFormat: "MMMM Do, YYYY", // Date format for display.
   postTagged: "TAGGED",
   postInCategories: "POSTED IN",
@@ -73,7 +73,7 @@ const config = {
   numberLoadmore: 6,
   btnLoadmore: "Load more",
   homeHasLoadmore: true,
-  homeHasThumbnail: true,
+  homeHasThumbnail: false,
   homeHeader: "Home",
   // Use for page
   pathPrefixPagination: "/page", // Prefix path for pagination
@@ -92,41 +92,43 @@ const config = {
   categoryWidgetTitle: "Categories",
   tagWidgetTitle: "Tags",
   latestPostsWidgetTitle: "Latest posts",
+  linksWidgetTitle: "Links",
+  // Use for Google custom search
+  searchWidgetTitle: "Looking for?",
+  searchWidgetPlaceHolder: "Enter keyword",
+  searchEngineID: "008548374781244864787:9ybvtnkbt7o",
+  hasSearch: false,
+  // Use for links widget
+  sidebarSticky: true,
+  sidebarLinks: [
+    {
+      label: "Complete JavaScript",
+      url: "https://completejavascript.com/"
+    },
+    {
+      label: "Lam Pham Blog",
+      url: "https://phamvanlam.com/"
+    },
+    {
+      label: "Lam Pham Portfolio",
+      url: "http://about.phamvanlam.com/"
+    },
+  ],
   // Use for user info
   userName: "Lam Pham", // Username to display in the author segment.
-  userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed's author segment
-  userTwitter: "CmpltJavaScript", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "Hanoi, Vietnam", // User location to display in the author segment.
-  userAvatar: "https://www.gravatar.com/avatar/42fd3d526fde1ef76d5002e4ebd303e9.jpg?s=300", // User avatar to display in the author segment.
+  userEmail: "yangnianbing@gmail", // Email used for RSS feed"s author segment
+  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
+  userLocation: "China Hubei Wuhan", // User location to display in the author segment.
+  userAvatar: "", // User avatar to display in the author segment.
   userDescription:
-    "Software Engineer, Web Developer, JavaScript Lover & Blogger @completejavascript.", // User description to display in the author segment.
+    "Software Engineer, Web Developer, JavaScript Lover.", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
-      label: "Email",
-      url: "mailto:completejavascript.super@gmail.com",
-      iconClassName: "far envelope"
-    },
-    {
       label: "Website",
-      url: "https://completejavascript.com/",
+      url: "https://github.com/yangnianbing",
       iconClassName: "fas globe"
-    },
-    {
-      label: "Twitter",
-      url: "https://twitter.com/CmpltJavaScript",
-      iconClassName: "fab twitter"
-    },
-    { 
-      label: "Facebook", 
-      url: "https://www.facebook.com/completejavascript/", 
-      iconClassName: "fab facebook-f" 
-    },
-    { 
-      label: "Linkedin", 
-      url: "https://www.linkedin.com/in/completejavascript/", 
-      iconClassName: "fab linkedin-in"
-    },
+    }
   ],
   // Use for navigation
   navTitle: "GB Template",
@@ -138,39 +140,14 @@ const config = {
   socialLinks: [
     { 
       label: "Codepen", 
-      url: "https://codepen.io/completejavascript/", 
+      url: "https://codepen.io/yangnb", 
       iconClassName: "fab codepen" 
     },
     { 
-      label: "FreeCodeCamp", 
-      url: "", // Ignore 
-      iconClassName: "fab free-code-camp"
-    },
-    { 
       label: "GitHub",
-      url: "https://github.com/completejavascript",
+      url: "https://github.com/yangnianbing",
       iconClassName: "fab github"
-    },
-    { 
-      label: "Facebook", 
-      url: "https://www.facebook.com/completejavascript/", 
-      iconClassName: "fab facebook-f"
-    },
-    { 
-      label: "Linkedin", 
-      url: "https://www.linkedin.com/in/completejavascript/", 
-      iconClassName: "fab linkedin-in"
-    },
-    {
-      label: "Twitter",
-      url: "https://twitter.com/CmpltJavaScript",
-      iconClassName: "fab twitter"
-    },
-    {
-      label: "RSS",
-      url: "https://gb-template.netlify.com/rss.xml",
-      iconClassName: "fas rss"
-    },
+    }
   ],
   footerLinks: [
     { label: "Home", url: "/" },
@@ -183,8 +160,14 @@ const config = {
   copyright: "Copyright © 2019 Lam Pham. Unless otherwise noted, all code MIT license.",
   // Use for manifest
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#FFF" // Used for setting manifest background color.
+  backgroundColor: "#FFF", // Used for setting manifest background color.
+  headerImage: [            //Index page header image
+    '/image/home.jpg'
+  ],
+  headerDescription:'talk is cheap show me the code'  //index page header description
+  
 };
+
 
 // Validate
 
