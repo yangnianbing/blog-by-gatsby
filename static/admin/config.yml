@@ -17,6 +17,9 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: 'Template', name: 'template', widget: "hidden", default: "post"}
+
+
 
   - name: "pages"
     label: "Pages"
