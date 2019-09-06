@@ -110,7 +110,8 @@ const config = {
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF", // Used for setting manifest background color.
   headerImage: [            //Index page header image
-    '/image/home.jpg'
+    '/image/home.jpg',
+    '/image/photographybanner-new.jpg'
   ],
   headerDescription:'just code it and record life'  //index page header description
   
