@@ -22,8 +22,8 @@ const config = {
   postInCategories: "",
   postOnDate: "Posted on",
   // Use for comment
-  lazyLoadComments: true,
-  disqusShortname: "gb-template", // Disqus shortname.
+  lazyLoadComments: false,
+  disqusShortname: "yangnb", // Disqus shortname.
   btnLoadComments: "Load comments",
   // Use for home page
   numberLoadmore: 6,
