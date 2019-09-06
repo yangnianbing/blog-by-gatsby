@@ -57,18 +57,10 @@ const config = {
   // Use for links widget
   sidebarSticky: true,
   sidebarLinks: [
-    {
-      label: "Complete JavaScript",
-      url: "https://completejavascript.com/"
-    },
-    {
-      label: "Lam Pham Blog",
-      url: "https://phamvanlam.com/"
-    },
-    {
-      label: "Lam Pham Portfolio",
-      url: "http://about.phamvanlam.com/"
-    },
+    // {
+    //   label: "Complete JavaScript",
+    //   url: "https://completejavascript.com/"
+    // }
   ],
   // Use for user info
   userName: "Lam Pham", // Username to display in the author segment.
