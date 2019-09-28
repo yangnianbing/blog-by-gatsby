@@ -2,7 +2,8 @@ const path = require("path");
 const slug = require("slug");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
-const slugify = text => slug(text).toLowerCase();
+const pinyin = require("pinyin");
+const slugify = text => slug(pinyin(text).join(' ')).toLowerCase();
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -15,6 +16,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
     ) {
       slug = `/${slugify(node.frontmatter.title)}`;
+      console.log(slug);
     } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
     } else if (parsedFilePath.dir === "") {
