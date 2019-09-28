@@ -198,9 +198,7 @@ This project is based on:
   * [taniarascia.com](https://github.com/taniarascia/taniarascia.com)
   * [Shiba.CSS](https://github.com/completejavascript/shiba-css)
 
-## Author
 
-  * [Lam Pham](http://about.phamvanlam.com)
 
 ## License
 
