@@ -17,9 +17,8 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Categories", name: "categories", widget: "select", options: ["读书", "编码"], default: "编码"}
       - {label: 'Template', name: 'template', widget: "hidden", default: "post"}
-
-
 
   - name: "pages"
     label: "Pages"
