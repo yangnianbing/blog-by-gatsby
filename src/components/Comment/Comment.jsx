@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Disqus from "./Disqus";
+import GitalkComponent from "./GitalkComment";
 
 class Comment extends Component {
   state = {
@@ -24,7 +24,7 @@ class Comment extends Component {
         )}
 
         {this.state.isShow && (
-          <Disqus postNode={postNode} />
+          <GitalkComponent />
         )}
       </div>
     )
