@@ -1,5 +1,6 @@
 var slug = require('slug');
 console.log(slug('i am'))
 
-var pinyin = require("pinyin");
-console.log(pinyin("abcde中心123123"));
+var unidecode = require("unidecode");
+console.log(unidecode("abcde编码123123"));
+

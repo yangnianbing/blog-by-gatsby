@@ -1,8 +1,9 @@
 import config from "../../data/SiteConfig";
 import moment from "moment";
 import slug from "slug";
+import unidecode from "unidecode";
 
-export const slugify = text => slug(text).toLowerCase();
+export const slugify = text => slug(unidecode(text)).toLowerCase();
 export const isInteralLink = link => link && link[0] === "/";
 export const formatDate = date => moment(date).format(config.dateFormat);
 export const getTagPath = tag => `${config.pathPrefixTag}/${slugify(tag)}`;

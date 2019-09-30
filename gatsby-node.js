@@ -2,8 +2,8 @@ const path = require("path");
 const slug = require("slug");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
-const pinyin = require("pinyin");
-const slugify = text => slug(pinyin(text).join(' ')).toLowerCase();
+const unidecode = require("unidecode");
+const slugify = text => slug(unidecode(text)).toLowerCase();
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
