@@ -16,7 +16,7 @@ class Comment extends Component {
     const { extraClass, postNode, btnLoadComments } = this.props;
 
     return (
-      <div className={`comment-container text-center ${extraClass}`}>
+      <div className={`comment-container ${extraClass}`}>
         {!this.state.isShow && (
           <button className="btn-primary" onClick={this.handleClick}>
             {btnLoadComments}
