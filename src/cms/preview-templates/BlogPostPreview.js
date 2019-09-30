@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import BlogPostTemplate from '../../templates/post-preview-template'
+import BlogPreviewPostTemplate from '../../templates/post-preview-template'
 
 const BlogPostPreview = ({ entry, widgetFor }) => (
-  <BlogPostTemplate
+  <BlogPreviewPostTemplate
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
     tags={entry.getIn(['data', 'tags'])}
