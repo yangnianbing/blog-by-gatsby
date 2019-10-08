@@ -5,7 +5,13 @@
       padding-bottom: 0.75rem;
     }
   }
+
+  img{
+    max-width: 100%;
+  }
 }
+
+
 
 @media (min-width: 600px) {
   .post-container {
