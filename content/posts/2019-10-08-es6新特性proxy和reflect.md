@@ -14,7 +14,7 @@ Vue3源码放出来了，新特性包括用ES6中的Proxy替换了通过Object.d
 
 ## 浏览器支持情况
 先来看看[caniuse](https://www.caniuse.com/#feat=proxy)上面给出来的浏览器支持情况，看样子vue3是不支持ie11了。edge, firefox, chrome, safari这些市场占有率比较高的浏览器都是没有问题的。
-![浏览器支持情况](http://ww1.sinaimg.cn/large/006rHsX4gy1g7pr0np7jrj31wz0sktf2.jpg)
+![浏览器支持情况](https://ww1.sinaimg.cn/large/006rHsX4gy1g7pr0np7jrj31wz0sktf2.jpg)
 
 ## 数组问题
 Vue中对于数组的操作监听有些限制，Vue对被侦听数组的push,pop等方法都进行了包装，通过这些方法进行操作数组都能触发视图的更新，但是如果直接通过下标索引修改某项的值或者修改数组的length属性，Vue并不能检测到。
